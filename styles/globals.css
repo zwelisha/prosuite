@@ -15,7 +15,9 @@ body {
   background: linear-gradient(180deg, #348ADD 0%, #2E6CA8 100%);
 }
 .bg-green {background-color: var(--green);}
-
+.bg-border-green {
+  background-color: var(--border-green);
+}
 /* Text style */
 .text-linear-gradient-blue {
   background: linear-gradient(180deg, #54B9ED, #2E6CA8);

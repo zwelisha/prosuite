@@ -1,12 +1,14 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-
-const PrimaryButton = ({ text, onClick, disabled, startIcon, endIcon, variant, color, customBgClass }) => {
+// I know this component is unnecessary, the code needs to be refactored and 
+// rather add a class prop to set background colour on primary button component
+// This does not conform with DRY and KISS principles.
+const GreenButton = ({ text, onClick, disabled, startIcon, endIcon, variant, color, customBgClass }) => {
    
     const buttonStyle = {
         variant: variant || "contained",
         color: color || "primary",
-        background: 'linear-gradient(180deg, #54B9ED 0%, #2E6CA8 100%)',
+        background: '#91BC4D',
     };
 
     return (
@@ -24,4 +26,4 @@ const PrimaryButton = ({ text, onClick, disabled, startIcon, endIcon, variant, c
     );
 };
 
-export default PrimaryButton;
+export default GreenButton;

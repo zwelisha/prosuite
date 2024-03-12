@@ -1,4 +1,5 @@
 import PrimaryButton from "../button";
+import GreenButton from "../green-button";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -38,8 +39,8 @@ const Header = () => {
                     information technology. We offer solutions that grow, 
                     empower and help businesses.
                   </p>
-                  <PrimaryButton text="GET STARTED"/>&nbsp;
-                  <PrimaryButton text="REQUEST A DEMO"/>
+                  <PrimaryButton text="GET STARTED" />&nbsp;
+                  <GreenButton text="REQUEST A DEMO"/>
                 </div>
             </div>
         </div>
