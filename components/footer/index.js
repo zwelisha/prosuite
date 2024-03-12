@@ -89,27 +89,23 @@ const Footer = () => {
                   <Grid item>
                     <Image src={xSocialIcon} 
                       alt="X SOCIAL ICON"
-                      placeholder="blur"
                     />
                   </Grid>
                   <Grid item>
                     <Image src={facebookSocialIcon} 
-                      alt="X SOCIAL ICON"
-                      placeholder="blur"
+                      alt="FACEBOOK SOCIAL ICON"
                     />
                   </Grid>
                   <Grid item>
                     <Image 
                       src={instagramSocialIcon} 
-                      alt="X SOCIAL ICON"
-                      placeholder="blur"
+                      alt="INSTAGRAM SOCIAL ICON"
                       style={{align: 'left'}}
                     />
                   </Grid>
                   <Grid item>
                     <Image src={githubSocialIcon} 
-                      alt="X SOCIAL ICON"
-                      placeholder="blur"
+                      alt="GITHUB SOCIAL ICON"
                     />
                   </Grid>
                 </Grid>

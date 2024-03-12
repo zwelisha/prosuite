@@ -10,14 +10,14 @@ const Header = () => {
         <div className="mt-50 mb-50">
             <Container>
                 <Grid container spacing={2}>
-                  <Grid md={7}>
+                  <Grid md={7} item>
                     <div>
                       <Typography className="text-border-green font-weight-400 text-medium-large">
                         Welcome to ProSuite
                       </Typography>
                     </div>
                   </Grid>
-                  <Grid md={5}>
+                  <Grid md={5} item>
                     <div>
                       <Image src={headerImage} 
                         alt="DISCOVER PROSUITE HEADER"

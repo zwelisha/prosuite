@@ -18,7 +18,7 @@ const About = () => {
                 </div>
                 <div>
                     <Grid container spacing={2} className="mb-50 mt-50">
-                        <Grid md={4}>
+                        <Grid md={4} item>
                           <div className="card-div text-centered">
                               <Image src={whyImage1} 
                                 alt="COMPREHENSIVE MANAGEMENT SUITE"
@@ -30,7 +30,7 @@ const About = () => {
                               </p>
                           </div>
                         </Grid>
-                        <Grid md={4}>
+                        <Grid md={4} item>
                           <div className="card-div text-centered">
                               <Image src={whyImage2} 
                                 alt="COMPREHENSIVE MANAGEMENT SUITE"
@@ -42,7 +42,7 @@ const About = () => {
                               </p>
                           </div>
                         </Grid>
-                        <Grid md={4}>
+                        <Grid md={4} item>
                           <div className="card-div text-centered">
                               <Image src={whyImage3} 
                                 alt="COMPREHENSIVE MANAGEMENT SUITE"
