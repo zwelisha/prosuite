@@ -30,14 +30,23 @@ body {
 .text-small {
   font-size: 12px;
 }
+.text-medium-large {
+  font-size: 24px;
+}
 .text-large {
   font-size: 36px;
+}
+.text-extra-large {
+  font-size: 72px;
 }
 .text-centered {
   text-align: center;
 }
 .text-light-grey {
   color: var(--light-grey);
+}
+.text-border-green {
+  color: var(--border-green);
 }
 .line-height-20 {
   line-height: 20px;
@@ -47,6 +56,9 @@ body {
 }
 .line-height-24 {
   line-height: 24px;
+}
+.line-height-88 {
+  line-height: 88px;
 }
 .font-weight-700 {
   font-weight: 700;
@@ -85,11 +97,27 @@ footer {
   padding: 15px 15px 15px 15px;
   margin: 15px 15px 15px 15px;
 }
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
 /* For mobile devices, this must be left aligned, otherwise imbi kakhulu */
 @media (max-width: 768px) {
   .centered-div {
     justify-content: flex-start;
     text-align: left;
+  }
+  /* Hide elemts with this class on mobile */
+  .hide-on-mobile {
+    display: none;
+  }
+  .text-extra-large {
+    font-size: 58px;
+
+  }
+  .line-height-88 {
+    line-height: 60px;
   }
 }
 
@@ -97,5 +125,19 @@ footer {
 @media (min-width: 768px) {
   .card-div {
     height: 340px;
+  }
+  #discover-section {
+    position: absolute;
+    top: 150px;
+  }
+  #discover-section .text-extra-large {
+    font-weight: 700;
+    font-size: 96
+  }
+  #discover-sub-section {
+    max-width: 496px;
+  }
+  .text-extra-large {
+    font-size: 96px;
   }
 }
