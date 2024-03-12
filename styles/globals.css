@@ -1,13 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 :root {
+  --border-green: #91BC4D;
   --green: #84BE35;
-  --light-grey: hsl(0, 2%, 54%);
+  --light-grey: #B5B5B6;
   --black: #171717;
   --white: #FFFFFF;
 }
 body {
   font-family: sans-serif !important;
+}
+/* colours */
+.bg-linear-gradient-blue {
+  background: linear-gradient(180deg, #348ADD 0%, #2E6CA8 100%);
+}
+.bg-green {background-color: var(--green);}
+
+/* Text style */
+.text-linear-gradient-blue {
+  background: linear-gradient(180deg, #54B9ED, #2E6CA8);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  color: transparent;
+  text-fill-color: transparent; /* For Firefox */
 }
 .text-medium {
   font-size: 16px;
@@ -15,23 +30,11 @@ body {
 .text-small {
   font-size: 12px;
 }
-/* colours */
-.bg-linear-gradient-blue {
-  background: linear-gradient(180deg, #348ADD 0%, #2E6CA8 100%);
+.text-large {
+  font-size: 36px;
 }
-.bg-green {background-color: var(--green);}
-.text-linear-gradient-blue {
-  background: linear-gradient(180deg, #54B9ED 0%, #2E6CA8 100%);
-
-}
-footer {
-  color: var(--white);
-} 
-#main-footer-content {
-  padding: 50px 50px 50px 50px;
-}
-#footer-call-to-action {
-  padding: 20px 50px 20px 50px;
+.text-light-grey {
+  color: var(--light-grey);
 }
 .line-height-20 {
   line-height: 20px;
@@ -39,4 +42,47 @@ footer {
 .line-height-16 {
   line-height: 16px;
 }
+.line-height-24 {
+  line-height: 24px;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.text-left-bordered-green {
+  border-left: 6px solid var(--border-green);
+}
+ /* End of text style */
+footer {
+  color: var(--white);
+} 
 
+.mt-50 {
+  margin-top: 50px !important;
+}
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* You can adjust the height as needed */
+}
+
+/* For mobile devices, this must be left aligned, otherwise imbi kakhulu */
+@media (max-width: 768px) {
+  .centered-div {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
