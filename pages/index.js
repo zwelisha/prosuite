@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <Layout>
       <Container>
+        <About/>
        <Solutions/>
       </Container>
     </Layout>
