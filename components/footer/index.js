@@ -6,13 +6,23 @@ import xSocialIcon from '../../public/1.png';
 import facebookSocialIcon from '../../public/2.png';
 import instagramSocialIcon from '../../public/3.png';
 import githubSocialIcon from '../../public/4.png';
+import PrimaryButton from '../button';
 
 const Footer = () => {
   return (
     <div className='bg-linear-gradient-blue'>
       <footer>
-        <div id="footer-call-to-action" className='bg-green'>
-          <h1>We&apos;d love to show you how our solution works</h1>
+        <div id="footer-call-to-action" className='bg-green'>   
+          <Grid container>
+            <Grid item md={9}>
+              <h1>We&apos;d love to show you how our solution works</h1>
+            </Grid>
+            <Grid item md={3}>
+              <PrimaryButton
+                text="REQUEST A DEMO"
+              />
+            </Grid>
+          </Grid>
         </div>
         <div id="main-footer-content" className='bg-linear-gradient-blue'>
           <Grid container spacing={4} className="mt-5">
