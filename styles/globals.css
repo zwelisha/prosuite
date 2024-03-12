@@ -1,16 +1,42 @@
-html,
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+:root {
+  --green: #84BE35;
+  --light-grey: hsl(0, 2%, 54%);
+  --black: #171717;
+  --white: #FFFFFF;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: sans-serif !important;
+}
+.text-medium {
+  font-size: 16px;
+}
+.text-small {
+  font-size: 12px;
+}
+/* colours */
+.bg-linear-gradient-blue {
+  background: linear-gradient(180deg, #348ADD 0%, #2E6CA8 100%);
+}
+.bg-green {background-color: var(--green);}
+.text-linear-gradient-blue {
+  background: linear-gradient(180deg, #54B9ED 0%, #2E6CA8 100%);
+
+}
+footer {
+  color: var(--white);
+} 
+#main-footer-content {
+  padding: 50px 50px 50px 50px;
+}
+#footer-call-to-action {
+  padding: 20px 50px 20px 50px;
+}
+.line-height-20 {
+  line-height: 20px;
+}
+.line-height-16 {
+  line-height: 16px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
