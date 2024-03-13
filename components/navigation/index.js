@@ -23,20 +23,13 @@ const  Navigation = () => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
+  
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Typography
@@ -66,7 +59,7 @@ const  Navigation = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: '#348ADD'}}/>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -88,7 +81,7 @@ const  Navigation = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" sx={{ color: '#363738' }}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -120,7 +113,7 @@ const  Navigation = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#363738', display: 'block' }}
               >
                 {page}
               </Button>
