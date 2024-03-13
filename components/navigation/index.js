@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import LogoImage from "../../public/logo.png";
 import Image from "next/image";
+import GreenButton from "../green-button";
 
 const pages = ['Home', 'About', 'Solutions', 'Contact'];
 const  Navigation = () => {
@@ -84,6 +85,7 @@ const  Navigation = () => {
                   <Typography textAlign="center" sx={{ color: '#363738' }}>{page}</Typography>
                 </MenuItem>
               ))}
+              <GreenButton text="Request A Demo"/>
             </Menu>
           </Box>
           <Typography
@@ -118,6 +120,7 @@ const  Navigation = () => {
                 {page}
               </Button>
             ))}
+            <GreenButton text="Request a Demo"/>
           </Box>
         </Toolbar>
       </Container>
