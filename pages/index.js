@@ -6,13 +6,13 @@ import About from '../components/about';
 import Solutions from '../components/solutions';
 
 export default function Home() {
-  return (
+    return (
     <Layout>
-      <Container>
-        <Header/>
-        <About/>
-       <Solutions/>
-      </Container>
+        <Container>
+            <Header/>
+            <About/>
+            <Solutions/>
+        </Container>
     </Layout>
 
   );
