@@ -148,4 +148,8 @@ footer {
         font-size: 96px;
     }
 
+    .solution-body-content {
+        height: 80px;
+    }
+
 }
