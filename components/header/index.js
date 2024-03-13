@@ -12,9 +12,9 @@ const Header = () => {
                 <Grid container spacing={2}>
                     <Grid md={7} item>
                         <div>
-                        <Typography className="text-border-green font-weight-400 text-medium-large">
-                            Welcome to ProSuite
-                        </Typography>
+                            <Typography id="welcome-text" className="text-border-green font-weight-400 text-medium-large">
+                                Welcome to ProSuite
+                            </Typography>
                         </div>
                     </Grid>
                     <Grid md={5} item>
@@ -29,7 +29,7 @@ const Header = () => {
                 </Grid>
             </Container>
             <div id="discover-section">
-                <Typography className="text-linear-gradient-blue text-extra-large line-height-88">
+                <Typography className="text-linear-gradient-blue text-extra-large line-height-88 mt-25">
                     Discover<br className="hide-on-mobile"/> the power of<br className="hide-on-mobile"/> Software
                 </Typography>
                 <div id="discover-sub-section">

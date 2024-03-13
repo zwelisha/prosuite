@@ -152,4 +152,10 @@ footer {
         height: 80px;
     }
 
+    #welcome-text {
+        text-align: left;
+        position: relative;
+        left: -20px;
+    }
+
 }
