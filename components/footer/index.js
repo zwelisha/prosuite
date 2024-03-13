@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import Typography from"@mui/material/Typography";
 const Footer = () => {
   return (
-  <div>
+  <div id="contact-section">
       <footer>
         <div className='bg-green' style={{padding: "25px 0px 25px 0px"}}>
           <Container>

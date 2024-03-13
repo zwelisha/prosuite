@@ -7,24 +7,22 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import LogoImage from "../../public/logo.png";
 import Image from "next/image";
 import GreenButton from "../green-button";
 
 const pages = ['Home', 'About', 'Solutions', 'Contact'];
-const  Navigation = () => {
+const sectionLinks = ['intro-section', 'about-section', 'solutions-section', 'contact-section'];
+
+const Navigation = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -37,7 +35,7 @@ const  Navigation = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href={`#${sectionLinks[0]}`}
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -60,7 +58,7 @@ const  Navigation = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon sx={{ color: '#348ADD'}}/>
+              <MenuIcon sx={{ color: '#348ADD' }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -80,19 +78,26 @@ const  Navigation = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{ color: '#363738' }}>{page}</Typography>
+                  <Typography
+                    component="a"
+                    href={`#${sectionLinks[index]}`}
+                    textAlign="center"
+                    sx={{ color: '#363738' }}
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
-              <GreenButton text="Request A Demo"/>
+              <GreenButton text="Request A Demo" href="#contact-section" />
             </Menu>
           </Box>
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href={`#${sectionLinks[0]}`}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -106,25 +111,29 @@ const  Navigation = () => {
           >
             <Image src={LogoImage} alt="PROSUITE LOGO" />
           </Typography>
-          <Box sx={{
+          <Box
+            sx={{
               flexGrow: 1,
               display: { xs: 'none', md: 'flex' },
-              justifyContent: 'flex-end', 
-            }}>
-            {pages.map((page) => (
+              justifyContent: 'flex-end',
+            }}
+          >
+            {pages.map((page, index) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: '#363738', display: 'block' }}
+                href={`#${sectionLinks[index]}`}
               >
                 {page}
               </Button>
             ))}
-            <GreenButton text="Request a Demo"/>
+            <GreenButton text="Request a Demo" href="#contact-section" />
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
-}
+};
+
 export default Navigation;

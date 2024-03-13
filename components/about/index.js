@@ -8,7 +8,7 @@ import whyImage3 from "../../public/image 7.png";
 import Image from "next/image";
 const About = () => {
     return (
-        <div>
+        <div id="about-section">
             <Container>
                 <div className="centered-div">
                     <Typography

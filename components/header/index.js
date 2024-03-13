@@ -7,7 +7,7 @@ import Image from "next/image";
 import headerImage from "../../public/ProSuite-web-Icons 1.png"
 const Header = () => {
     return (
-        <div className="mt-50 mb-50">
+        <div id="intro-section" className="mt-50 mb-50">
             <Container>
                 <Grid container spacing={2}>
                   <Grid md={7} item>

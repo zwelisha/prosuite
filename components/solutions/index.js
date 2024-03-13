@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 const Solutions = () => {
     return (
-        <div>
+        <div id="solutions-section">
             <Container>
                 <div className="centered-div">
                     <Typography
