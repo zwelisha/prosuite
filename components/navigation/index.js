@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -17,123 +17,122 @@ const pages = ['Home', 'About', 'Solutions', 'Contact'];
 const sectionLinks = ['intro-section', 'about-section', 'solutions-section', 'contact-section'];
 
 const Navigation = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
 
-  return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
-      <Container maxWidth="lg">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href={`#${sectionLinks[0]}`}
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            <Image src={LogoImage} alt="PROSUITE LOGO" />
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon sx={{ color: '#348ADD' }} />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page, index) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography
-                    component="a"
-                    href={`#${sectionLinks[index]}`}
-                    textAlign="center"
-                    sx={{ color: '#363738' }}
-                  >
-                    {page}
-                  </Typography>
-                </MenuItem>
-              ))}
-              <GreenButton text="Request A Demo" href="#contact-section" />
-            </Menu>
-          </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href={`#${sectionLinks[0]}`}
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            <Image src={LogoImage} alt="PROSUITE LOGO" />
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: 'none', md: 'flex' },
-              justifyContent: 'flex-end',
-            }}
-          >
-            {pages.map((page, index) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#363738', display: 'block' }}
-                href={`#${sectionLinks[index]}`}
-              >
-                {page}
-              </Button>
-            ))}
-            <GreenButton text="Request a Demo" href="#contact-section" />
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
-  );
+    return (
+        <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+            <Container maxWidth="lg">
+                <Toolbar disableGutters>
+                    <Typography
+                        variant="h6"
+                        noWrap
+                        component="a"
+                        href={`#${sectionLinks[0]}`}
+                        sx={{
+                        mr: 2,
+                        display: { xs: 'none', md: 'flex' },
+                        fontFamily: 'monospace',
+                        fontWeight: 700,
+                        letterSpacing: '.3rem',
+                        color: 'inherit',
+                        textDecoration: 'none',
+                        }}
+                    >
+                    <Image src={LogoImage} alt="PROSUITE LOGO" />
+                    </Typography>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <IconButton
+                        size="large"
+                        aria-label="account of current user"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        onClick={handleOpenNavMenu}
+                        color="inherit"
+                        >
+                        <MenuIcon sx={{ color: '#348ADD' }} />
+                            </IconButton>
+                        <Menu
+                        id="menu-appbar"
+                        anchorEl={anchorElNav}
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+                        }}
+                        keepMounted
+                        transformOrigin={{
+                            vertical: 'top',
+                            horizontal: 'left',
+                        }}
+                        open={Boolean(anchorElNav)}
+                        onClose={handleCloseNavMenu}
+                        sx={{
+                            display: { xs: 'block', md: 'none' },
+                        }}
+                        >
+                        {pages.map((page, index) => (
+                            <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                <Typography
+                                    component="a"
+                                    href={`#${sectionLinks[index]}`}
+                                    textAlign="center"
+                                    sx={{ color: '#363738' }}
+                                >
+                                    {page}
+                                </Typography>
+                            </MenuItem>
+                        ))}
+                        <GreenButton text="Request A Demo" href="#contact-section" />
+                        </Menu>
+                    </Box>
+                    <Typography
+                        variant="h5"
+                        noWrap
+                        component="a"
+                        href={`#${sectionLinks[0]}`}
+                        sx={{
+                        mr: 2,
+                        display: { xs: 'flex', md: 'none' },
+                        flexGrow: 1,
+                        fontFamily: 'monospace',
+                        fontWeight: 700,
+                        letterSpacing: '.3rem',
+                        color: 'inherit',
+                        textDecoration: 'none',
+                        }}
+                    >
+                        <Image src={LogoImage} alt="PROSUITE LOGO" />
+                    </Typography>
+                    <Box
+                        sx={{
+                        flexGrow: 1,
+                        display: { xs: 'none', md: 'flex' },
+                        justifyContent: 'flex-end',
+                        }}
+                    >
+                        {pages.map((page, index) => (
+                        <Button
+                            key={page}
+                            onClick={handleCloseNavMenu}
+                            sx={{ my: 2, color: '#363738', display: 'block' }}
+                            href={`#${sectionLinks[index]}`}
+                        >
+                            {page}
+                        </Button>
+                        ))}
+                        <GreenButton text="Request a Demo" href="#contact-section" />
+                    </Box>
+                </Toolbar>
+            </Container>
+        </AppBar>
+    );
 };
 
 export default Navigation;

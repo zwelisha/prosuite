@@ -19,44 +19,44 @@ const About = () => {
                 <div>
                     <Grid container spacing={2} className="mb-50 mt-50">
                         <Grid md={4} item>
-                          <div className="card-div text-centered">
-                              <Image src={whyImage1} 
+                            <div className="card-div text-centered">
+                                <Image src={whyImage1}
                                 alt="COMPREHENSIVE MANAGEMENT SUITE"
                                 placeholder="blur"
-                              />
-                              <h3 className="text-light-grey">Comprehensive <br/>Management Suite</h3>
-                              <p className="text-light-grey text-medium line-height-24">
-                                  ProSuite is a one-stop solution for enterprise operations, offering services from asset tracking to compliance management.
-                              </p>
-                          </div>
+                                />
+                                <h3 className="text-light-grey">Comprehensive <br/>Management Suite</h3>
+                                <p className="text-light-grey text-medium line-height-24">
+                                    ProSuite is a one-stop solution for enterprise operations, offering services from asset tracking to compliance management.
+                                </p>
+                            </div>
                         </Grid>
                         <Grid md={4} item>
-                          <div className="card-div text-centered">
-                              <Image src={whyImage2} 
+                            <div className="card-div text-centered">
+                                <Image src={whyImage2}
                                 alt="COMPREHENSIVE MANAGEMENT SUITE"
                                 placeholder="blur"
-                              />
-                              <h3 className="text-light-grey">User-Friendly<br/>Design</h3>
-                              <p className="text-light-grey text-medium line-height-24">
-                                With its emphasis on user experience and easy-to-use tools, ProSuite transforms complex tasks into simple operations.
-                              </p>
-                          </div>
+                                />
+                                <h3 className="text-light-grey">User-Friendly<br/>Design</h3>
+                                <p className="text-light-grey text-medium line-height-24">
+                                    With its emphasis on user experience and easy-to-use tools, ProSuite transforms complex tasks into simple operations.
+                                </p>
+                            </div>
                         </Grid>
                         <Grid md={4} item>
-                          <div className="card-div text-centered">
-                              <Image src={whyImage3} 
+                            <div className="card-div text-centered">
+                                <Image src={whyImage3}
                                 alt="COMPREHENSIVE MANAGEMENT SUITE"
                                 placeholder="blur"
-                              />
-                              <h3 className="text-light-grey">Cloud-Based<br/>Solution</h3>
-                              <p className="text-light-grey text-medium line-height-24">
-                                As a flexible, cloud-based suite, ProSuite ensures business continuity and scalability, allowing businesses to manage their operations anytime, anywhere.
-                              </p>
-                          </div>
+                                />
+                                <h3 className="text-light-grey">Cloud-Based<br/>Solution</h3>
+                                <p className="text-light-grey text-medium line-height-24">
+                                    As a flexible, cloud-based suite, ProSuite ensures business continuity and scalability, allowing businesses to manage their operations anytime, anywhere.
+                                </p>
+                            </div>
                         </Grid>
                     </Grid>
-                </div>   
-            </Container> 
+                </div>
+            </Container>
         </div>
     );
 }

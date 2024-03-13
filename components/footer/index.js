@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
-import footerLogo from '../../public/footer-logo.png';  
+import footerLogo from '../../public/footer-logo.png';
 import xSocialIcon from '../../public/1.png';
 import facebookSocialIcon from '../../public/2.png';
 import instagramSocialIcon from '../../public/3.png';
@@ -104,7 +104,7 @@ const Footer = () => {
                                 />
                             </Grid>
                             <Grid item>
-                                <Image src={githubSocialIcon} 
+                                <Image src={githubSocialIcon}
                                 alt="GITHUB SOCIAL ICON"
                                 />
                             </Grid>
