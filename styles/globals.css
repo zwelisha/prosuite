@@ -1,145 +1,151 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 :root {
-  --border-green: #91BC4D;
-  --green: #84BE35;
-  --light-grey: #B5B5B6;
-  --black: #171717;
-  --white: #FFFFFF;
+    --border-green: #91BC4D;
+    --green: #84BE35;
+    --light-grey: #B5B5B6;
+    --black: #171717;
+    --white: #FFFFFF;
 }
 body {
-  font-family: sans-serif !important;
+    font-family: sans-serif !important;
 }
 /* colours */
 .bg-linear-gradient-blue {
-  background: linear-gradient(180deg, #348ADD 0%, #2E6CA8 100%);
+    background: linear-gradient(180deg, #348ADD 0%, #2E6CA8 100%);
 }
-.bg-green {background-color: var(--green);}
+.bg-green {
+    background-color: var(--green);}
 .bg-border-green {
-  background-color: var(--border-green);
+    background-color: var(--border-green);
 }
 /* Text style */
 .text-linear-gradient-blue {
-  background: linear-gradient(180deg, #54B9ED, #2E6CA8);
-  background-clip: text;
-  -webkit-background-clip: text; /* For Safari/Chrome */
-  color: transparent;
-  text-fill-color: transparent; /* For Firefox */
+    background: linear-gradient(180deg, #54B9ED, #2E6CA8);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    color: transparent;
+    text-fill-color: transparent; /* For Firefox */
 }
 .text-medium {
-  font-size: 16px;
+    font-size: 16px;
 }
 .text-small {
-  font-size: 12px;
+    font-size: 12px;
 }
 .text-medium-large {
-  font-size: 24px;
+    font-size: 24px;
 }
 .text-large {
-  font-size: 36px;
+    font-size: 36px;
 }
 .text-extra-large {
-  font-size: 72px;
+    font-size: 72px;
 }
 .text-centered {
-  text-align: center;
+    text-align: center;
 }
 .text-light-grey {
-  color: var(--light-grey);
+    color: var(--light-grey);
 }
 .text-border-green {
-  color: var(--border-green);
+    color: var(--border-green);
 }
 .line-height-20 {
-  line-height: 20px;
+    line-height: 20px;
 }
 .line-height-16 {
-  line-height: 16px;
+    line-height: 16px;
 }
 .line-height-24 {
-  line-height: 24px;
+    line-height: 24px;
 }
 .line-height-88 {
-  line-height: 88px;
+    line-height: 88px;
 }
 .font-weight-700 {
-  font-weight: 700;
+    font-weight: 700;
 }
 .font-weight-400 {
-  font-weight: 400;
+    font-weight: 400;
 }
 .text-left-bordered-green {
-  border-left: 6px solid var(--border-green);
+    border-left: 6px solid var(--border-green);
 }
  /* End of text style */
 footer {
-  color: var(--white);
-} 
+    color: var(--white);
+}
 
 .mt-50 {
-  margin-top: 50px !important;
+    margin-top: 50px !important;
 }
 .mb-50 {
-  margin-bottom: 50px !important;
+    margin-bottom: 50px !important;
 }
 .mt-25 {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 .mb-25 {
-  margin-bottom: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+.pad-bottom-50 {
+    padding-bottom: 50px;
 }
 
 .centered-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-div {
-  box-shadow: 1px 2px 16px 0px #0000001A;
-  padding: 15px 15px 15px 15px;
-  margin: 15px 15px 15px 15px;
+    box-shadow: 1px 2px 16px 0px #0000001A;
+    padding: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
 }
 
 .responsive-image {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 /* For mobile devices, this must be left aligned, otherwise imbi kakhulu */
 @media (max-width: 768px) {
-  .centered-div {
-    justify-content: flex-start;
-    text-align: left;
-  }
+    .centered-div {
+        justify-content: flex-start;
+        text-align: left;
+    }
   /* Hide elemts with this class on mobile */
-  .hide-on-mobile {
-    display: none;
-  }
-  .text-extra-large {
-    font-size: 58px;
-
-  }
-  .line-height-88 {
-    line-height: 60px;
-  }
+    .hide-on-mobile {
+        display: none;
+    }
+    .text-extra-large {
+        font-size: 58px;
+    }
+    .line-height-88 {
+        line-height: 60px;
+    }
 }
+
 
 /* This is for proper alignment on desktop devices, since the last card has more text */
 @media (min-width: 768px) {
-  .card-div {
-    height: 340px;
-  }
-  #discover-section {
-    position: absolute;
-    top: 150px;
-  }
-  #discover-section .text-extra-large {
-    font-weight: 700;
-    font-size: 96
-  }
-  #discover-sub-section {
-    max-width: 496px;
-  }
-  .text-extra-large {
-    font-size: 96px;
-  }
+    .card-div {
+        height: 340px;
+    }
+    #discover-section {
+        position: absolute;
+        top: 150px;
+    }
+    #discover-section .text-extra-large {
+        font-weight: 700;
+        font-size: 96
+    }
+    #discover-sub-section {
+        max-width: 496px;
+    }
+    .text-extra-large {
+        font-size: 96px;
+    }
+
 }

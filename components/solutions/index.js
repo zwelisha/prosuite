@@ -23,7 +23,7 @@ const Solutions = () => {
                         </Grid>
                         <Grid md={4} item>
                             <h3 className="text-linear-gradient-blue">Risk Management</h3>
-                            <p className="text-light-grey text-medium line-height-24">
+                            <p className="text-light-grey text-medium line-height-24 text-left-bordered-grey">
                             Identify, capture and monitor enterprise risks with ease.
                             </p>
                             <PrimaryButton text="LEARN MORE"/>
