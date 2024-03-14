@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import LogoImage from "../../public/logo.png";
 import Image from "next/image";
 import GreenButton from "../green-button";
-
+import Link from "next/link";
 const pages = ['Home', 'About', 'Solutions', 'Contact'];
 const sectionLinks = ['intro-section', 'about-section', 'solutions-section', 'contact-section'];
 
@@ -28,7 +28,7 @@ const Navigation = () => {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+        <AppBar className="text-medium" position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none', fontFamily: 'Montserrat' }}>
             <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <Typography
@@ -39,7 +39,7 @@ const Navigation = () => {
                         sx={{
                         mr: 2,
                         display: { xs: 'none', md: 'flex' },
-                        fontFamily: 'monospace',
+                        fontFamily: 'montserrat',
                         fontWeight: 700,
                         letterSpacing: '.3rem',
                         color: 'inherit',
@@ -83,13 +83,15 @@ const Navigation = () => {
                                     component="a"
                                     href={`#${sectionLinks[index]}`}
                                     textAlign="center"
-                                    sx={{ color: '#363738' }}
+                                    sx={{ color: '#363738', fontFamily: 'Montserrat' }}
                                 >
                                     {page}
                                 </Typography>
                             </MenuItem>
                         ))}
-                        <GreenButton text="Request A Demo" href="#contact-section" />
+                        <Link href="#contact-section" passHref>
+                            <GreenButton text="Request A Demo" href="#contact-section" />
+                        </Link>
                         </Menu>
                     </Box>
                     <Typography
@@ -127,7 +129,9 @@ const Navigation = () => {
                             {page}
                         </Button>
                         ))}
-                        <GreenButton text="Request a Demo" href="#contact-section" />
+                        <Link className="mt-15" href="#contact-section" passHref>
+                            <GreenButton text="Request A Demo" href="#contact-section" />
+                        </Link>
                     </Box>
                 </Toolbar>
             </Container>

@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 :root {
     --border-green: #91BC4D;
     --green: #84BE35;
@@ -85,6 +86,9 @@ footer {
 }
 .mt-25 {
     margin-top: 25px;
+}
+.mt-15 {
+    margin-top: 15px !important;
 }
 .mb-25 {
     margin-bottom: 25px !important;

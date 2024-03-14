@@ -5,6 +5,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import headerImage from "../../public/ProSuite-web-Icons 1.png"
+import Link from "next/link";
+
 const Header = () => {
     return (
         <div id="intro-section" className="mt-50 mb-50">
@@ -39,8 +41,13 @@ const Header = () => {
                         information technology. We offer solutions that grow,
                         empower and help businesses.
                     </p>
-                    <PrimaryButton text="GET STARTED" />&nbsp;
-                    <GreenButton text="REQUEST A DEMO"/>
+                    <Link href="#solutions-section" passHref>
+                        <PrimaryButton text="GET STARTED" />
+                    </Link>
+                        &nbsp;
+                    <Link href="#contact-section" passHref>
+                        <GreenButton text="REQUEST A DEMO"/>
+                    </Link>
                 </div>
             </div>
         </div>
