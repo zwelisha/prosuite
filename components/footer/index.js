@@ -9,6 +9,7 @@ import githubSocialIcon from '../../public/4.png';
 import PrimaryButton from '../button';
 import Container from "@mui/material/Container";
 import Typography from"@mui/material/Typography";
+import Link from "next/link";
 const Footer = () => {
     return (
     <div id="contact-section">
@@ -20,9 +21,9 @@ const Footer = () => {
                             <Typography className="text-large">We&apos;d love to show you how our solution works</Typography>
                         </Grid>
                         <Grid item md={3} className='mb-50'>
-                            <PrimaryButton
-                            text="REQUEST A DEMO"
-                            />
+                            <Link href="#" passHref>
+                                <PrimaryButton text="REQUEST A DEMO"/>
+                            </Link>
                         </Grid>
                     </Grid>
                 </Container>   

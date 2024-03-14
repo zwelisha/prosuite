@@ -131,7 +131,10 @@ footer {
     }
 }
 
-
+.footer-links {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
 /* This is for proper alignment on desktop devices, since the last card has more text */
 @media (min-width: 768px) {
     .card-div {

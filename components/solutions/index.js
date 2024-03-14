@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import VerticalLine from "../vertical-line";
+import Link from "next/link";
 const Solutions = () => {
     return (
         <div id="solutions-section">
@@ -20,7 +21,9 @@ const Solutions = () => {
                             <p className="text-light-grey text-medium line-height-24 solution-body-content">
                                 Gain control of your asset with Software that helps you keep track of your physical assets.
                             </p>
-                            <PrimaryButton text="LEARN MORE"/>
+                            <Link href="#" passHref>
+                                <PrimaryButton text="LEARN MORE"/>
+                            </Link>
                         </Grid>
                         <Grid className="hide-on-mobile" md={1} item sx={{display: 'flex', alignItems: 'center', verticalAlign: 'center' }}>
                             <VerticalLine/>
@@ -30,17 +33,21 @@ const Solutions = () => {
                             <p className="text-light-grey text-medium line-height-24 text-left-bordered-grey solution-body-content">
                             Identify, capture and monitor enterprise risks with ease.
                             </p>
-                            <PrimaryButton text="LEARN MORE"/>
+                            <Link href="#" passHref>
+                                <PrimaryButton text="LEARN MORE"/>
+                            </Link>
                         </Grid>
                         <Grid className="hide-on-mobile" md={1} item sx={{display: 'flex', alignItems: 'center', verticalAlign: 'center' }}>
                             <VerticalLine/>
                         </Grid>
                         <Grid md={3} item>
-                            <h3 className="text-linear-gradient-blue">Asset Management</h3>
+                            <h3 className="text-linear-gradient-blue">Documents Management</h3>
                             <p className="text-light-grey text-medium line-height-24 solution-body-content">
                                 Easy-to-use solution that enables your firm to convert paper into electronic files.
                             </p>
-                            <PrimaryButton text="LEARN MORE"/>
+                            <Link href="#" passHref>
+                                <PrimaryButton text="LEARN MORE"/>
+                            </Link>
                         </Grid>
                     </Grid>
                 </div>
@@ -51,7 +58,9 @@ const Solutions = () => {
                             <p className="text-light-grey text-medium line-height-24 solution-body-content">
                                 Achieve business stragetic goals with a solution ensuring organizations are running effenciently
                             </p>
-                            <PrimaryButton text="LEARN MORE"/>
+                            <Link href="#" passHref>
+                                <PrimaryButton text="LEARN MORE"/>
+                            </Link>
                         </Grid>
                         <Grid className="hide-on-mobile" md={1} item sx={{display: 'flex', alignItems: 'center', verticalAlign: 'center' }}>
                             <VerticalLine/>
@@ -61,7 +70,9 @@ const Solutions = () => {
                             <p className="text-light-grey text-medium line-height-24 solution-body-content">
                                 Streamline your audit processes and comply with regulations or internal policies.
                             </p>
-                            <PrimaryButton text="LEARN MORE"/>
+                            <Link href="#" passHref>
+                                <PrimaryButton text="LEARN MORE"/>
+                            </Link>
                         </Grid>
                         <Grid className="hide-on-mobile" md={1} item sx={{display: 'flex', alignItems: 'center', verticalAlign: 'center' }}>
                             <VerticalLine/>
@@ -71,7 +82,9 @@ const Solutions = () => {
                             <p className="text-light-grey text-medium line-height-24 solution-body-content">
                                 Manage and meet legal requirements and comply with applicable laws and regulations.
                             </p>
-                            <PrimaryButton text="LEARN MORE"/>
+                            <Link href="#" passHref>
+                                <PrimaryButton text="LEARN MORE"/>
+                            </Link>
                         </Grid>
                     </Grid>
                 </div>
