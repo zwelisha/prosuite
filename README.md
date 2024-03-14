@@ -24,13 +24,13 @@ NextJS is a javascript framework that makes it easier to create react applicatio
 Deatils [here](https://nextjs.org/)
 
 #### 3. Text Editor
-Any text editor of your choice can be used. However Visual Studio Code and Atom are highly recommended.
+Any text editor of your choice can be used. However Visual Studio Code and Atom are highly recommended. See [VS Code](https://code.visualstudio.com/) and [Atom](https://atom-editor.cc/)
 
 #### 4. Prettier
 The installation documentation for Prettier can be found [here](https://prettier.io/) have clear instructions for each text editor.
 
 #### 5. Jest
-The installation documentation for Jest can be found [here](https://jestjs.io/docs/getting-started) 
+The installation documentation for Jest can be found [here](https://jestjs.io/docs/getting-started)
 You can also install Jest by running ```npm install --save-dev jest```
 
 #### Folder Structure
@@ -39,12 +39,26 @@ There are three folders in drone-app. js, css and public. Then there are three f
 
 ```
 prosuite
-.next
+    .next
     components
+        about
+        button
+        footer
+        green-button
+        header
+        layout
+        navigation
+        solutions
+        vertical-line
     node_modules
     pages
+        api
+        _app.js
+        index.js
     public
-        images
+    styles
+        globals.css
+        Home.module.css
     .gitignore
     next.config.js
     package-lock.js
@@ -75,13 +89,15 @@ Then to run this app run the following command
 ```
 npm install
 ```
-then ```
+then 
+```
 npm run dev
 ```
 then copy the localhost url and open it on your browser
 
-### Testing the code 
-Run this command ```npm test```
+### Testing the code
+Run this command 
+```npm test```
 
 Have fun
 
