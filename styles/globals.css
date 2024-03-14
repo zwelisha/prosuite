@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 :root {
     --border-green: #91BC4D;
     --green: #84BE35;
@@ -8,7 +8,7 @@
     --white: #FFFFFF;
 }
 body {
-    font-family: sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
 }
 /* colours */
 .bg-linear-gradient-blue {
